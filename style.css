@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+body > p {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.simulator {
+    background: #1e293b;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px #0005;
+}
+
+select {
+    padding: 10px;
+    margin: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 25px 0;
+}
+
+.inputs label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+h2 {
+    margin: 20px 0;
+}
+
+#output {
+    color: #4ade80;
+    font-size: 32px;
+}
+
+#explanation {
+    color: #cbd5e1;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Circuit Diagram */
+.circuit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.circuit span {
+    color: #38bdf8;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.wire {
+    width: 30px;
+    height: 3px;
+    background: #4ade80;
+}
+
+#gateSymbol {
+    background: #0284c7;
+    color: white;
+    padding: 18px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 12px #0284c755;
+}
+

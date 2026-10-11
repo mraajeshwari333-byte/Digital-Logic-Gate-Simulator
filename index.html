@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Logic Gate Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Digital Logic Gate Simulator</h1>
+    <p>Explore digital logic gates interactively</p>
+
+    <div class="simulator">
+        <label for="gate">Select Logic Gate:</label>
+        <select id="gate">
+            <option value="AND">AND</option>
+            <option value="OR">OR</option>
+            <option value="NOT">NOT</option>
+            <option value="NAND">NAND</option>
+            <option value="NOR">NOR</option>
+            <option value="XOR">XOR</option>
+            <option value="XNOR">XNOR</option>
+        </select>
+
+        <div class="inputs">
+            <label>Input A:
+                <button id="inputA" type="button">0</button>
+            </label>
+
+            <label id="inputBLabel">Input B:
+                <button id="inputB" type="button">0</button>
+            </label>
+        </div>
+
+        <h2>Output: <span id="output">0</span></h2>
+<h3>Circuit Diagram</h3>
+
+
+<div class="circuit">
+    <span>Input A</span>
+
+    <svg id="gateDiagram" viewBox="0 0 240 100" width="240">
+        <line x1="10" y1="30" x2="65" y2="30"
+              stroke="#4ade80" stroke-width="3"/>
+
+        <line x1="10" y1="70" x2="65" y2="70"
+              stroke="#4ade80" stroke-width="3"/>
+
+        <path id="gateShape"
+              d="M65 10 L100 10 A40 40 0 0 1 100 90 L65 90 Z"
+              fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+
+<circle id="inversionCircle"
+        cx="145" cy="50" r="5"
+        fill="#1e293b" stroke="#38bdf8"
+        stroke-width="2" style="display:none"/>
+
+
+        <line x1="150" y1="50" x2="210" y2="50"
+              stroke="#4ade80" stroke-width="3"/>
+
+        <text id="gateText" x="100" y="55"
+              fill="white" font-size="14"
+              text-anchor="middle">AND</text>
+    </svg>
+
+    <span>Output</span>
+</div>
+
+
+        <p id="explanation">Choose a gate and change its inputs.</p>
+        
+<h3>Truth Table</h3>
+
+<table id="truthTable">
+    <thead>
+        <tr>
+            <th>Input A</th>
+            <th>Input B</th>
+            <th>Output</th>
+        </tr>
+    </thead>
+    <tbody id="truthTableBody">
+    </tbody>
+</table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
